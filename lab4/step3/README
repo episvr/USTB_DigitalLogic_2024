@@ -1,0 +1,5 @@
+### 模块描述
+实际上其他的代码都是Lab3流水灯的example
+只有ledpwm模块是自己写的
+
+ledpwm: 根据输入的data信号，输出pwm信号，用于控制LED的亮度。

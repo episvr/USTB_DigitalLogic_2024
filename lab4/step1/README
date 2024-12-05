@@ -1,0 +1,17 @@
+### 分频估计
+经测试，人的反应时间最低为170ms-240ms，即1250Hz的时钟信号。
+同时，为了使得数字较为稳定的显示，设计分频为500Hz的分频.
+// N1 = 2*10^5 
+// N2 = 8*10^4  (actually its 1250Hz...)
+### 模块描述 
+1. segmsg.v
+输入500Hz的时钟信号(clk500Hz)，输出 [7:0]databus 在7段数码管的显示(pos,seg);
+
+2. clkDiv.v
+输入100MHz的时钟信号，输出500Hz,1250Hz的时钟信号(clk1250Hz,clk500Hz);
+
+3. response.v
+输入stimulated信号，在按下break键时，输出相应的反应时间responseTime.
+
+4. randomtick.v
+生成随机的stimulated信号.
