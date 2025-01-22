@@ -1,0 +1,9 @@
+A SIMPLE TEST：
+[op] rx ry data_bus
+0000 01 00 00000101 // load  5 to r1; r1=5  show 5
+0000 10 00 00000011 // load  3 to r2; r2=3  show 3
+0010 01 10 00000000 // add  r1 && r2; r1=5+3=8 r2=3 show 8
+<operations else>
+<operations else>
+0100 01 10 00000000 // mul  r1 && r2; r1=5*3=15 r2=3 mulreg=15
+
